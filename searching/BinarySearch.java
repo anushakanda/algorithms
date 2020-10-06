@@ -9,6 +9,12 @@
 
 Public class BinarySearch(){
  
+ //In Built binarySearch() method
+ public int usingInBuiltMethod(){
+   int index = Arrays.binarySearch(sortedArray, key);
+   int index = Collections.binarySearch(sortedList, key);
+ }
+ 
  //Iterative approach
  public int getElementPosition(int[] arr,int elem){
     int lowerIndex = 0;
