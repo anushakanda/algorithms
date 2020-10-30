@@ -24,21 +24,21 @@ public class InsertionSort(){
  void sort(int arr[]){
    int size = arr.length();
    
-   for(int outerloop = 1; outerloop < size; outerloop++){
+   for(int i = 1; i < size; i++){
       //value
-      int key = arr[outerloop];
+      int currentElement = arr[i];
       //hole
-      int leftIndex = outerloop-1;
+      int leftIndex = i-1;
       
       //Move greater elements 1 space up.
-      while(leftIndex > 0 && key < arr[leftIndex]){
+      while(leftIndex > 0 && currentElement < arr[leftIndex]){
          arr[leftIndex + 1 ] = arr[leftIndex];
          leftIndex--;
         
       }
       
       //assign value to hole
-      arr[leftIndex =1] = key;
+      arr[leftIndex =1] = currentElement;
    }
  }
 
