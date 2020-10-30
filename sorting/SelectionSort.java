@@ -18,6 +18,7 @@ public class SelectionSort{
           } 
        }
        
+    //We can optimize unnecessary swapping of elements when 'minIndex ' and 'outer' are equal. 
        if(outer!=minIndex){
          int tmp = arr[outer];
         arr[outer] = arr[minIndex];
