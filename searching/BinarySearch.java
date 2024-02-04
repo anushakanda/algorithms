@@ -21,7 +21,7 @@ Public class BinarySearch(){
     int higherIndex = arr.length - 1;
     
     while(lowerIndex < = higherIndex){
-      int midIndex = (lowerIndex + higherIndex)/2;
+      int midIndex = lowet=rIndex + (higherIndex - lowerIndex)/2;
       int midElem = arr[midIndex];
       if(midElem == elem){
         return midIndex;
